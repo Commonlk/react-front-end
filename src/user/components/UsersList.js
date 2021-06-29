@@ -1,10 +1,12 @@
 import React from "react";
 
 import UserItem from "./UserItem";
-import "./UserList.css";
+import "./UsersList.css";
 
 const UserList = (props) => {
-  if (props.items.lenght) {
+  console.log(props.items.length);
+
+  if (props.items.length === 0) {
     return (
       <div className="center">
         <h2>No users found.</h2>
@@ -13,7 +15,7 @@ const UserList = (props) => {
   }
 
   return (
-    <ul>
+    <ul className="users-list">
       {props.items.map((user) => (
         <UserItem
           key={user.id}
