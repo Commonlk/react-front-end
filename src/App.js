@@ -1,23 +1,18 @@
+import React from "react";
+import { BrowserRouter as Router, Route, Redirect } from "react-router-dom";
 import "./App.css";
 
-function App() {
+import Users from "./user/pages/Users";
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Route path="/" exact>
+        <Users />
+      </Route>
+      <Redirect to="/" />
+    </Router>
   );
-}
+};
 
 export default App;
