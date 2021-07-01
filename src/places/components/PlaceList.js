@@ -1,4 +1,3 @@
-import { placeholder } from "@babel/types";
 import React from "react";
 
 import Card from "../../shared/components/UIElements/Card/Card";
