@@ -1,7 +1,7 @@
 import React from "react";
 
 import Card from "../../../shared/components/UIElements/Card/Card";
-import UserItem from "./UserItem";
+import UserItem from "../UserItem/UserItem";
 import "./UsersList.css";
 
 const UserList = (props) => {
