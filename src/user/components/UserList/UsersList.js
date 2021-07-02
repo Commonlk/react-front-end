@@ -1,6 +1,6 @@
 import React from "react";
 
-import Card from "../../shared/components/UIElements/Card/Card";
+import Card from "../../../shared/components/UIElements/Card/Card";
 import UserItem from "./UserItem";
 import "./UsersList.css";
 
