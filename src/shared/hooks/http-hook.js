@@ -39,6 +39,8 @@ export const useHttpClient = () => {
 
   useEffect(() => {
     return () => {
+      // I need to keep track of the current state
+      // eslint-disable-next-line react-hooks/exhaustive-deps
       activeHttpRequests.current.forEach((abortCtrl) => abortCtrl.abort());
     };
   }, []);
